@@ -1,0 +1,114 @@
+*{
+  outline: none;
+  border:none;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+body{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  
+}
+
+.main{
+  width:400px;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  max-height:600px;
+  overflow: hidden;
+  background-color:gray;
+  border-radius:12px;
+  box-shadow: 5px 7px 10px 3px #24004628;
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  padding:24px;
+}
+
+#chk{
+  display:none;
+}
+
+/*login*/
+.login{
+  position: relative;
+  margin-bottom:30px;
+  width:100%;
+  height:100%;
+  color:white;
+}
+
+.login label{
+  margin: 40% 0 5%;
+}
+
+label{
+  font-size: 2rem;
+  justify-content: center;
+  text-align:center;
+  display: flex;
+  font-weight:bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+input{
+  width:100%;
+  height:45px;
+  border-radius:10px;
+  
+  
+}
+
+.registra{
+  background-color:#604E3ED6;
+  border-radius:60%/5%;
+  transform: translateY(5%);
+  transition: .8s ease-in-out;
+  height:500px;
+  padding:20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.registra label{
+  color:white;
+  transform: scale(.6);
+}
+
+#chk:checked ~.registra{
+  transform: translatey(-60%);
+}
+
+#chk:checked ~ .registra label{
+  transform: scale(1);
+  margin:10% 0 5%;
+  
+}
+
+#chk:checked ~ .login label{
+  transform: scale(.6);
+  margin: 1% 0 5%;
+}
+
+
+
+button{
+  
+  height:40px;
+  border-radius:10px;
+  width: 80%;
+  margin: auto;
+  font-size:18px;
+  font-weight:bold;
+  transition: .2s ease-in;
+  text-transform:capitalize;
+  
+}
